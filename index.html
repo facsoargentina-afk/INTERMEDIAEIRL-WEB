@@ -6,8 +6,8 @@
     <title>INTERMEDIA EIRL | Finanzas Estructuradas</title>
     <style>
         :root {
-            /* COLOR EXACTO DEL FONDO DE TU IMAGEN LOGO-RED.PNG */
-            --navy-bg: #0a121e; 
+            /* COLOR IDENTIFICADO EN TU LOGO.PNG */
+            --navy-match: #0a121e; 
             --gold: #b8934d;
             --off-white: #fcfcfc;
         }
@@ -20,8 +20,8 @@
         }
 
         header { 
-            /* Al usar este color, el borde cuadrado de la imagen se vuelve invisible */
-            background-color: var(--navy-bg);
+            /* Esto igualará el fondo de la web con el fondo del logo */
+            background-color: var(--navy-match);
             padding: 80px 20px 120px;
             text-align: center;
             clip-path: polygon(0 0, 100% 0, 100% 88%, 0 100%);
@@ -73,10 +73,8 @@
 
         .feature-box h3 { font-size: 1.5rem; color: #050a14; margin-top: 0; }
 
-        .action-area { text-align: center; padding: 60px 20px; background: #f0f2f5; }
-
         .btn-modern {
-            background: var(--navy-bg);
+            background: var(--navy-match);
             color: white;
             padding: 22px 60px;
             text-decoration: none;
@@ -85,7 +83,7 @@
         }
 
         footer { 
-            background: var(--navy-bg); 
+            background: var(--navy-match); 
             color: white; 
             padding: 80px 20px; 
             text-align: center; 
@@ -95,7 +93,7 @@
 <body>
 
 <header>
-    <img src="logo-red.png" alt="INTERMEDIA EIRL" class="logo-web">
+    <img src="logo.png" alt="INTERMEDIA EIRL" class="logo-web">
     <div class="hero-text">
         <h1>INTERMEDIA EIRL</h1>
         <p>Estructuración de Negocios</p>
@@ -117,7 +115,7 @@
     </div>
 </div>
 
-<div class="action-area">
+<div class="action-area" style="text-align: center; padding: 60px;">
     <a href="https://wa.me/51963953530" class="btn-modern">Solicitar Análisis</a>
 </div>
 

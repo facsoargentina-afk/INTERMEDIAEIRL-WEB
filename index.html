@@ -21,11 +21,12 @@
         }
 
         header { 
-            background: linear-gradient(135deg, var(--navy) 0%, #0a192f 100%);
-            padding: 80px 20px 120px;
-            text-align: center;
-            clip-path: polygon(0 0, 100% 0, 100% 88%, 0 100%);
-            position: relative;
+        /* Color exacto para que coincida con el fondo del logo */
+        background-color: #05162e; 
+        padding: 80px 20px 120px;
+        text-align: center;
+        clip-path: polygon(0 0, 100% 0, 100% 88%, 0 100%);
+        position: relative;
         }
 
         .brand-container {
@@ -36,10 +37,12 @@
 
         /* USANDO LA URL DIRECTA DEL LOGO CIRCULAR (COMBINACIÓN B) */
         .logo-web { 
-            max-width: 280px; 
-            height: auto; 
-            filter: drop-shadow(0px 10px 20px rgba(0,0,0,0.5));
-            transition: transform 0.4s ease;
+        max-width: 280px; 
+        height: auto; 
+        /* Eliminamos sombras que puedan resaltar el borde del cuadrado */
+        transition: transform 0.4s ease;
+        display: block;
+        margin: 0 auto;
         }
         
         .logo-web:hover {

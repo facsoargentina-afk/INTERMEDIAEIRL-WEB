@@ -6,194 +6,81 @@
     <title>INTERMEDIA EIRL | Finanzas Estructuradas</title>
     <style>
         :root {
-            /* Color extraído directamente de la imagen del logo para integración total */
-            --navy-logo: #06162d; 
+            /* COLOR EXACTO DEL LOGO CIRCULAR */
+            --navy-bg: #0a121e; 
             --gold: #b8934d;
             --off-white: #fcfcfc;
-            --accent-gray: #f0f2f5;
         }
 
         body { 
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
             margin: 0; 
             background-color: var(--off-white); 
-            color: #1a1a1a; 
-            overflow-x: hidden;
         }
 
         header { 
-            /* Usamos el color exacto del fondo del logo para que no se vea el cuadrado */
-            background-color: var(--navy-logo);
-            padding: 80px 20px 120px;
+            background-color: var(--navy-bg);
+            padding: 60px 20px 100px;
             text-align: center;
-            clip-path: polygon(0 0, 100% 0, 100% 88%, 0 100%);
-            position: relative;
-        }
-
-        .brand-container {
-            position: relative;
-            display: inline-block;
-            margin-bottom: 20px;
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
         }
 
         .logo-web { 
-            max-width: 280px; 
+            width: 100%;
+            max-width: 320px; 
             height: auto; 
-            /* Transición suave al pasar el mouse */
-            transition: transform 0.4s ease;
             display: block;
             margin: 0 auto;
-        }
-        
-        .logo-web:hover {
-            transform: scale(1.05);
         }
 
         .hero-text h1 { 
             color: white; 
-            font-size: 3.2rem; 
-            margin: 10px 0 5px; 
-            letter-spacing: -1px;
+            font-size: 3rem; 
+            margin: 15px 0 5px; 
             font-weight: 700;
         }
         
         .hero-text p { 
             color: var(--gold); 
-            font-size: 1.2rem; 
+            font-size: 1.1rem; 
             font-weight: 600; 
             text-transform: uppercase; 
-            letter-spacing: 5px; 
-            margin-top: 0;
+            letter-spacing: 4px; 
         }
 
         .main-content { 
-            max-width: 1200px; 
-            margin: -60px auto 80px; 
+            max-width: 1100px; 
+            margin: -50px auto 60px; 
             display: grid; 
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
-            gap: 25px;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+            gap: 20px;
             padding: 0 20px;
-            position: relative;
-            z-index: 10;
         }
 
         .feature-box {
             background: white;
-            padding: 45px;
+            padding: 40px;
             border-radius: 4px;
-            border-bottom: 4px solid transparent;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.08);
-            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-bottom: 4px solid var(--gold);
         }
 
-        .feature-box:hover {
-            border-bottom-color: var(--gold);
-            transform: translateY(-10px);
-            box-shadow: 0 25px 50px rgba(0,0,0,0.12);
-        }
-
-        .feature-box h3 { 
-            font-size: 1.5rem; 
-            color: #050a14; 
-            margin-top: 0;
-            margin-bottom: 20px;
-            position: relative;
-            padding-bottom: 10px;
-        }
-
-        .feature-box h3::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 40px;
-            height: 3px;
-            background: var(--gold);
-        }
-
-        .feature-box p {
-            color: #555;
-            font-size: 1.05rem;
-            line-height: 1.7;
-        }
-
-        .action-area { 
-            text-align: center; 
-            padding: 60px 20px; 
-            background: var(--accent-gray); 
-        }
+        .action-area { text-align: center; padding: 40px; }
 
         .btn-modern {
-            background: #050a14;
+            background: #0a121e;
             color: white;
-            padding: 22px 60px;
+            padding: 20px 50px;
             text-decoration: none;
             font-weight: 700;
-            letter-spacing: 2px;
             display: inline-block;
-            border: 2px solid #050a14;
-            transition: 0.3s ease;
             text-transform: uppercase;
         }
 
-        .btn-modern:hover { 
-            background: transparent; 
-            color: #050a14; 
-        }
-
-        footer { 
-            background: #050a14; 
-            color: white; 
-            padding: 80px 20px; 
-            text-align: center; 
-        }
-        
-        .footer-content { opacity: 0.8; font-size: 0.9rem; letter-spacing: 1px; }
-
-        @media (max-width: 768px) {
-            .hero-text h1 { font-size: 2.2rem; }
-            header { padding: 60px 20px 100px; }
-            .logo-web { max-width: 220px; }
-        }
+        footer { background: #0a121e; color: white; padding: 60px 20px; text-align: center; }
     </style>
 </head>
 <body>
 
 <header>
-    <div class="brand-container">
-        <img src="http://googleusercontent.com/image_generation_content/6" alt="INTERMEDIA EIRL" class="logo-web">
-    </div>
-    <div class="hero-text">
-        <h1>INTERMEDIA EIRL</h1>
-        <p>Estructuración de Negocios</p>
-    </div>
-</header>
-
-<div class="main-content">
-    <div class="feature-box">
-        <h3>Sustitución de Deuda</h3>
-        <p>Optimizamos el perfil financiero de su empresa, sustituyendo pasivos costosos por estructuras de capital eficientes y sostenibles.</p>
-    </div>
-    <div class="feature-box">
-        <h3>Vivienda Corporativa</h3>
-        <p>Implementamos vehículos financieros para la rotación de activos inmobiliarios mediante alianzas institucionales de alto nivel.</p>
-    </div>
-    <div class="feature-box">
-        <h3>Rescate de Proyectos</h3>
-        <p>Especialistas en ingeniería de rescate para obras paralizadas, devolviendo la viabilidad técnica y financiera a sus activos.</p>
-    </div>
-</div>
-
-<div class="action-area">
-    <a href="https://wa.me/51963953530" class="btn-modern">Solicitar Análisis Estratégico</a>
-</div>
-
-<footer>
-    <div class="footer-content">
-        <p><strong>CHICLAYO / PERÚ</strong></p>
-        <p>INTERMEDIA EIRL © 2026 | Operaciones Financieras Especializadas</p>
-    </div>
-</footer>
-
-</body>
-</html>
+    <img src="http://googleusercontent.com/image_generation_content/6

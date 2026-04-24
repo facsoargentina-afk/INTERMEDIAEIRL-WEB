@@ -6,8 +6,8 @@
     <title>INTERMEDIA EIRL | Finanzas Estructuradas</title>
     <style>
         :root {
-            /* COLOR EXACTO DEL FONDO DEL LOGO (#0d182d) */
-            --navy-match: #0d182d; 
+            /* COLOR EXACTO DEL FONDO DE TU IMAGEN LOGO-RED.PNG */
+            --navy-bg: #0a121e; 
             --gold: #b8934d;
             --off-white: #fcfcfc;
         }
@@ -20,8 +20,9 @@
         }
 
         header { 
-            background-color: var(--navy-match);
-            padding: 60px 20px 100px;
+            /* Al usar este color, el borde cuadrado de la imagen se vuelve invisible */
+            background-color: var(--navy-bg);
+            padding: 80px 20px 120px;
             text-align: center;
             clip-path: polygon(0 0, 100% 0, 100% 88%, 0 100%);
         }
@@ -32,8 +33,6 @@
             display: block;
             margin: 0 auto;
             transition: transform 0.4s ease;
-            /* Fuerza a que si hay un borde, se suavice */
-            outline: none;
         }
         
         .logo-web:hover {
@@ -77,7 +76,7 @@
         .action-area { text-align: center; padding: 60px 20px; background: #f0f2f5; }
 
         .btn-modern {
-            background: var(--navy-match);
+            background: var(--navy-bg);
             color: white;
             padding: 22px 60px;
             text-decoration: none;
@@ -86,9 +85,9 @@
         }
 
         footer { 
-            background: var(--navy-match); 
+            background: var(--navy-bg); 
             color: white; 
-            padding: 60px 20px; 
+            padding: 80px 20px; 
             text-align: center; 
         }
     </style>
@@ -96,7 +95,7 @@
 <body>
 
 <header>
-    <img src="http://googleusercontent.com/image_generation_content/8" alt="INTERMEDIA EIRL" class="logo-web">
+    <img src="logo-red.png" alt="INTERMEDIA EIRL" class="logo-web">
     <div class="hero-text">
         <h1>INTERMEDIA EIRL</h1>
         <p>Estructuración de Negocios</p>

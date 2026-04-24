@@ -6,7 +6,8 @@
     <title>INTERMEDIA EIRL | Finanzas Estructuradas</title>
     <style>
         :root {
-            --navy: #050a14;
+            /* Color extraído directamente de la imagen del logo para integración total */
+            --navy-logo: #06162d; 
             --gold: #b8934d;
             --off-white: #fcfcfc;
             --accent-gray: #f0f2f5;
@@ -21,12 +22,12 @@
         }
 
         header { 
-        /* Color exacto para que coincida con el fondo del logo */
-        background-color: #05162e; 
-        padding: 80px 20px 120px;
-        text-align: center;
-        clip-path: polygon(0 0, 100% 0, 100% 88%, 0 100%);
-        position: relative;
+            /* Usamos el color exacto del fondo del logo para que no se vea el cuadrado */
+            background-color: var(--navy-logo);
+            padding: 80px 20px 120px;
+            text-align: center;
+            clip-path: polygon(0 0, 100% 0, 100% 88%, 0 100%);
+            position: relative;
         }
 
         .brand-container {
@@ -35,14 +36,13 @@
             margin-bottom: 20px;
         }
 
-        /* USANDO LA URL DIRECTA DEL LOGO CIRCULAR (COMBINACIÓN B) */
         .logo-web { 
-        max-width: 280px; 
-        height: auto; 
-        /* Eliminamos sombras que puedan resaltar el borde del cuadrado */
-        transition: transform 0.4s ease;
-        display: block;
-        margin: 0 auto;
+            max-width: 280px; 
+            height: auto; 
+            /* Transición suave al pasar el mouse */
+            transition: transform 0.4s ease;
+            display: block;
+            margin: 0 auto;
         }
         
         .logo-web:hover {
@@ -94,7 +94,7 @@
 
         .feature-box h3 { 
             font-size: 1.5rem; 
-            color: var(--navy); 
+            color: #050a14; 
             margin-top: 0;
             margin-bottom: 20px;
             position: relative;
@@ -124,25 +124,25 @@
         }
 
         .btn-modern {
-            background: var(--navy);
+            background: #050a14;
             color: white;
             padding: 22px 60px;
             text-decoration: none;
             font-weight: 700;
             letter-spacing: 2px;
             display: inline-block;
-            border: 2px solid var(--navy);
+            border: 2px solid #050a14;
             transition: 0.3s ease;
             text-transform: uppercase;
         }
 
         .btn-modern:hover { 
             background: transparent; 
-            color: var(--navy); 
+            color: #050a14; 
         }
 
         footer { 
-            background: var(--navy); 
+            background: #050a14; 
             color: white; 
             padding: 80px 20px; 
             text-align: center; 

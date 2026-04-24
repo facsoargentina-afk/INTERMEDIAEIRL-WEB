@@ -6,8 +6,8 @@
     <title>INTERMEDIA EIRL | Finanzas Estructuradas</title>
     <style>
         :root {
-            /* Color exacto para integrar el fondo del logo */
-            --navy-match: #0b1629; 
+            /* COLOR EXACTO DEL FONDO DEL LOGO (#0d182d) */
+            --navy-match: #0d182d; 
             --gold: #b8934d;
             --off-white: #fcfcfc;
         }
@@ -32,6 +32,8 @@
             display: block;
             margin: 0 auto;
             transition: transform 0.4s ease;
+            /* Fuerza a que si hay un borde, se suavice */
+            outline: none;
         }
         
         .logo-web:hover {
@@ -70,20 +72,12 @@
             box-shadow: 0 15px 35px rgba(0,0,0,0.08);
         }
 
-        .feature-box h3 { 
-            font-size: 1.5rem; 
-            color: #050a14; 
-            margin-top: 0;
-        }
+        .feature-box h3 { font-size: 1.5rem; color: #050a14; margin-top: 0; }
 
-        .action-area { 
-            text-align: center; 
-            padding: 60px 20px; 
-            background: #f0f2f5; 
-        }
+        .action-area { text-align: center; padding: 60px 20px; background: #f0f2f5; }
 
         .btn-modern {
-            background: #0b1629;
+            background: var(--navy-match);
             color: white;
             padding: 22px 60px;
             text-decoration: none;
@@ -92,7 +86,7 @@
         }
 
         footer { 
-            background: #0b1629; 
+            background: var(--navy-match); 
             color: white; 
             padding: 60px 20px; 
             text-align: center; 
@@ -102,7 +96,7 @@
 <body>
 
 <header>
-    <img src="http://googleusercontent.com/image_generation_content/6" alt="INTERMEDIA EIRL" class="logo-web">
+    <img src="http://googleusercontent.com/image_generation_content/8" alt="INTERMEDIA EIRL" class="logo-web">
     <div class="hero-text">
         <h1>INTERMEDIA EIRL</h1>
         <p>Estructuración de Negocios</p>
@@ -120,7 +114,7 @@
     </div>
     <div class="feature-box">
         <h3>Rescate de Proyectos</h3>
-        <p>Ingeniería de rescate para obras paralizadas, devolviendo la viabilidad a sus activos.</p>
+        <p>Ingeniería de rescate para obras paralizadas, devolviendo la viabilidad a sus activos estratégicos.</p>
     </div>
 </div>
 

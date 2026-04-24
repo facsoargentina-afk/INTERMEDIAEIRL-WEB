@@ -6,8 +6,7 @@
     <title>INTERMEDIA EIRL | Finanzas Estructuradas</title>
     <style>
         :root {
-            /* COLOR IDENTIFICADO EN TU LOGO.PNG */
-            --navy-match: #0a121e; 
+            --navy-deep: #050a14; 
             --gold: #b8934d;
             --off-white: #fcfcfc;
         }
@@ -20,38 +19,42 @@
         }
 
         header { 
-            /* Esto igualará el fondo de la web con el fondo del logo */
-            background-color: var(--navy-match);
+            /* El logo transparente se verá perfecto sobre este degradado */
+            background: linear-gradient(135deg, #050a14 0%, #0a121e 100%);
             padding: 80px 20px 120px;
             text-align: center;
             clip-path: polygon(0 0, 100% 0, 100% 88%, 0 100%);
         }
 
         .logo-web { 
-            max-width: 280px; 
+            max-width: 300px; 
             height: auto; 
             display: block;
             margin: 0 auto;
-            transition: transform 0.4s ease;
+            /* Sombra suave para dar profundidad al círculo dorado */
+            filter: drop-shadow(0 8px 20px rgba(0,0,0,0.4));
+            transition: transform 0.3s ease;
         }
-        
+
         .logo-web:hover {
-            transform: scale(1.05);
+            transform: scale(1.03);
         }
 
         .hero-text h1 { 
             color: white; 
             font-size: 3.2rem; 
-            margin: 15px 0 5px; 
+            margin: 25px 0 5px; 
             font-weight: 700;
+            letter-spacing: -1px;
         }
         
         .hero-text p { 
             color: var(--gold); 
             font-size: 1.1rem; 
-            font-weight: 600; 
             text-transform: uppercase; 
             letter-spacing: 5px; 
+            margin-top: 0;
+            font-weight: 600;
         }
 
         .main-content { 
@@ -66,27 +69,46 @@
         .feature-box {
             background: white;
             padding: 45px;
-            border-radius: 4px;
-            border-bottom: 4px solid var(--gold);
+            border-radius: 8px;
+            border-bottom: 5px solid var(--gold);
             box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+            text-align: center;
         }
 
-        .feature-box h3 { font-size: 1.5rem; color: #050a14; margin-top: 0; }
+        .feature-box h3 {
+            font-size: 1.5rem;
+            color: var(--navy-deep);
+            margin-bottom: 15px;
+        }
+
+        .feature-box p {
+            line-height: 1.6;
+            color: #444;
+        }
 
         .btn-modern {
-            background: var(--navy-match);
+            background: var(--navy-deep);
             color: white;
-            padding: 22px 60px;
+            padding: 22px 50px;
             text-decoration: none;
             font-weight: 700;
             display: inline-block;
+            border-radius: 4px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: background 0.3s;
+        }
+
+        .btn-modern:hover {
+            background: #0a1c3d;
         }
 
         footer { 
-            background: var(--navy-match); 
-            color: white; 
-            padding: 80px 20px; 
+            background: var(--navy-deep); 
+            color: rgba(255,255,255,0.7); 
+            padding: 60px 20px; 
             text-align: center; 
+            font-size: 0.9rem;
         }
     </style>
 </head>
@@ -103,24 +125,24 @@
 <div class="main-content">
     <div class="feature-box">
         <h3>Sustitución de Deuda</h3>
-        <p>Optimizamos el perfil financiero de su empresa, sustituyendo pasivos costosos por estructuras de capital eficientes.</p>
+        <p>Optimizamos la estructura de capital de su empresa mediante ingeniería financiera avanzada y sustitución estratégica de pasivos.</p>
     </div>
     <div class="feature-box">
         <h3>Vivienda Corporativa</h3>
-        <p>Vehículos financieros para la rotación de activos inmobiliarios mediante alianzas institucionales.</p>
+        <p>Desarrollamos vehículos financieros eficientes para la rotación y gestión de activos inmobiliarios institucionales.</p>
     </div>
     <div class="feature-box">
         <h3>Rescate de Proyectos</h3>
-        <p>Ingeniería de rescate para obras paralizadas, devolviendo la viabilidad a sus activos estratégicos.</p>
+        <p>Especialistas en la reactivación de proyectos y obras paralizadas, devolviendo valor y viabilidad a sus activos.</p>
     </div>
 </div>
 
-<div class="action-area" style="text-align: center; padding: 60px;">
-    <a href="https://wa.me/51963953530" class="btn-modern">Solicitar Análisis</a>
+<div style="text-align: center; margin-bottom: 100px;">
+    <a href="https://wa.me/51963953530" class="btn-modern">Consultoría Especializada</a>
 </div>
 
 <footer>
-    <p>INTERMEDIA EIRL © 2026 | Chiclayo, Perú</p>
+    <p>INTERMEDIA EIRL © 2026 | Operaciones Financieras | Chiclayo, Perú</p>
 </footer>
 
 </body>

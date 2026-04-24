@@ -5,11 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>INTERMEDIA EIRL | Finanzas Estructuradas</title>
     <style>
+        :root {
+            --navy: #0a121e;
+            --gold: #b8934d;
+            --white: #ffffff;
+        }
+
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            margin: 0; 
+            background-color: #f8f9fa; 
+            color: var(--navy);
+        }
+
         header { 
-            background-color: #ffffff; /* Blanco puro para camuflar el fondo del logo */
-            padding: 60px 20px;
+            /* Fondo blanco puro para camuflar el fondo del logo */
+            background-color: var(--white);
+            padding: 60px 20px 100px;
             text-align: center;
             border-bottom: 1px solid #eee;
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
         }
 
         .logo-web { 
@@ -20,30 +35,83 @@
         }
 
         .hero-text h1 { 
-            color: #0a121e; 
             font-size: 2.8rem; 
             margin: 20px 0 5px; 
-            font-family: sans-serif;
+            color: var(--navy);
+            font-weight: 800;
         }
         
         .hero-text p { 
-            color: #b8934d; 
+            color: var(--gold); 
             font-size: 1rem; 
             text-transform: uppercase; 
             letter-spacing: 5px; 
-            font-family: sans-serif;
+            font-weight: 600;
         }
+
+        .main-content { 
+            max-width: 1100px; 
+            margin: -50px auto 80px; 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
+            gap: 25px;
+            padding: 0 20px;
+        }
+
+        .feature-box {
+            background: white;
+            padding: 45px;
+            border-radius: 5px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+            border-top: 4px solid var(--gold);
+            text-align: center;
+        }
+
+        .btn-modern {
+            background: var(--navy);
+            color: white;
+            padding: 20px 50px;
+            text-decoration: none;
+            font-weight: 700;
+            display: inline-block;
+            border-radius: 3px;
+        }
+
+        footer { background: var(--navy); color: white; padding: 60px 20px; text-align: center; }
     </style>
 </head>
 <body>
 
 <header>
-    <img src="logo-red.png" alt="INTERMEDIA EIRL" class="logo-web">
+    <img src="logo-red.jpg" alt="INTERMEDIA EIRL" class="logo-web">
     <div class="hero-text">
         <h1>INTERMEDIA EIRL</h1>
         <p>Estructuración de Negocios</p>
     </div>
 </header>
+
+<div class="main-content">
+    <div class="feature-box">
+        <h3>Sustitución de Deuda</h3>
+        <p>Optimizamos el perfil financiero de su empresa mediante la sustitución estratégica de pasivos.</p>
+    </div>
+    <div class="feature-box">
+        <h3>Vivienda Corporativa</h3>
+        <p>Estructuras financieras para la gestión y rotación de activos inmobiliarios institucionales.</p>
+    </div>
+    <div class="feature-box">
+        <h3>Rescate de Proyectos</h3>
+        <p>Ingeniería financiera aplicada a la reactivación de obras y activos paralizados.</p>
+    </div>
+</div>
+
+<div style="text-align: center; margin-bottom: 100px;">
+    <a href="https://wa.me/51963953530" class="btn-modern">Consultoría Especializada</a>
+</div>
+
+<footer>
+    <p>INTERMEDIA EIRL © 2026 | Chiclayo, Perú</p>
+</footer>
 
 </body>
 </html>

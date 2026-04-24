@@ -6,8 +6,8 @@
     <title>INTERMEDIA EIRL | Finanzas Estructuradas</title>
     <style>
         :root {
-            /* COLOR EXACTO DEL LOGO CIRCULAR */
-            --navy-bg: #0a121e; 
+            /* ESTE ES EL COLOR EXACTO DEL BORDE DE TU IMAGEN */
+            --navy-match: #0b1629; 
             --gold: #b8934d;
             --off-white: #fcfcfc;
         }
@@ -16,27 +16,37 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
             margin: 0; 
             background-color: var(--off-white); 
+            color: #1a1a1a;
         }
 
         header { 
-            background-color: var(--navy-bg);
+            /* Al usar el mismo color que la imagen, el cuadrado desaparece */
+            background-color: var(--navy-match);
             padding: 60px 20px 100px;
             text-align: center;
-            clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 88%, 0 100%);
+            position: relative;
         }
 
         .logo-web { 
-            width: 100%;
-            max-width: 320px; 
+            max-width: 280px; 
             height: auto; 
             display: block;
             margin: 0 auto;
+            /* Eliminamos sombras para que no se marque el borde del archivo */
+            filter: none;
+            transition: transform 0.4s ease;
+        }
+        
+        .logo-web:hover {
+            transform: scale(1.05);
         }
 
         .hero-text h1 { 
             color: white; 
-            font-size: 3rem; 
+            font-size: 3.2rem; 
             margin: 15px 0 5px; 
+            letter-spacing: -1px;
             font-weight: 700;
         }
         
@@ -45,42 +55,98 @@
             font-size: 1.1rem; 
             font-weight: 600; 
             text-transform: uppercase; 
-            letter-spacing: 4px; 
+            letter-spacing: 5px; 
+            margin-top: 0;
         }
 
         .main-content { 
-            max-width: 1100px; 
-            margin: -50px auto 60px; 
+            max-width: 1200px; 
+            margin: -60px auto 80px; 
             display: grid; 
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
-            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
+            gap: 25px;
             padding: 0 20px;
+            position: relative;
+            z-index: 10;
         }
 
         .feature-box {
             background: white;
-            padding: 40px;
+            padding: 45px;
             border-radius: 4px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
             border-bottom: 4px solid var(--gold);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.08);
         }
 
-        .action-area { text-align: center; padding: 40px; }
+        .feature-box h3 { 
+            font-size: 1.5rem; 
+            color: #050a14; 
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        .feature-box p {
+            color: #555;
+            font-size: 1.05rem;
+            line-height: 1.7;
+        }
+
+        .action-area { 
+            text-align: center; 
+            padding: 60px 20px; 
+            background: #f0f2f5; 
+        }
 
         .btn-modern {
-            background: #0a121e;
+            background: #0b1629;
             color: white;
-            padding: 20px 50px;
+            padding: 22px 60px;
             text-decoration: none;
             font-weight: 700;
             display: inline-block;
             text-transform: uppercase;
         }
 
-        footer { background: #0a121e; color: white; padding: 60px 20px; text-align: center; }
+        footer { 
+            background: #0b1629; 
+            color: white; 
+            padding: 80px 20px; 
+            text-align: center; 
+        }
     </style>
 </head>
 <body>
 
 <header>
-    <img src="http://googleusercontent.com/image_generation_content/6
+    <img src="http://googleusercontent.com/image_generation_content/6" alt="INTERMEDIA EIRL" class="logo-web">
+    <div class="hero-text">
+        <h1>INTERMEDIA EIRL</h1>
+        <p>Estructuración de Negocios</p>
+    </div>
+</header>
+
+<div class="main-content">
+    <div class="feature-box">
+        <h3>Sustitución de Deuda</h3>
+        <p>Optimizamos el perfil financiero de su empresa, sustituyendo pasivos costosos por estructuras de capital eficientes y sostenibles.</p>
+    </div>
+    <div class="feature-box">
+        <h3>Vivienda Corporativa</h3>
+        <p>Implementamos vehículos financieros para la rotación de activos inmobiliarios mediante alianzas institucionales de alto nivel.</p>
+    </div>
+    <div class="feature-box">
+        <h3>Rescate de Proyectos</h3>
+        <p>Especialistas en ingeniería de rescate para obras paralizadas, devolviendo la viabilidad técnica y financiera a sus activos.</p>
+    </div>
+</div>
+
+<div class="action-area">
+    <a href="https://wa.me/51963953530" class="btn-modern">Solicitar Análisis Estratégico</a>
+</div>
+
+<footer>
+    <p>INTERMEDIA EIRL © 2026 | Operaciones Financieras Especializadas</p>
+</footer>
+
+</body>
+</html>image_generation_content/6
